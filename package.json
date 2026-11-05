@@ -1,5 +1,5 @@
 {
-  "name": "modern-portfolio",
+  "name": "yayan-zebua-portfolio",
   "version": "1.0.1",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "@tsparticles/engine": "^4.4.0",
     "@tsparticles/react": "^4.4.0",
+    "@tsparticles/slim": "^4.4.0",
     "framer-motion": "^14.2.0",
     "next": "16.4.0",
     "react": "19.3.0",
@@ -35,46 +36,30 @@
     "typescript": "^6.0.3"
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhyyy@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Yayan Zebua",
+    "email": "yayanzebua15@gmail.com",
+    "url": "https://github.com/yayanzebua"
   },
-  "description": "Ethan Smith is a Full-stack web developer with 10+ years of experience.",
+  "description": "Personal Portfolio Website of Yayan Zebua - Full Stack Programmer & Informatics Engineering Student.",
   "keywords": [
-    "react",
-    "next",
-    "nextjs",
-    "typescript",
-    "html",
-    "css",
-    "tailwindcss",
-    "modern-ui",
-    "modern-ux",
+    "yayan-zebua",
     "portfolio",
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
     "framer-motion",
-    "react-hot-toast",
-    "resend",
-    "3d-website",
-    "particle-effect"
+    "fullstack",
+    "developer",
+    "indonesia"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/modern-portfolio.git"
+    "url": "https://github.com/yayanzebua/yayan-zebua-portfolio.git"
   },
-  "homepage": "https://github.com/sanidhyy/modern-portfolio#readme",
+  "homepage": "https://github.com/yayanzebua/yayan-zebua-portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/modern-portfolio/issues",
-    "email": "sanidhyyy@gmail.com"
-  },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ]
+    "url": "https://github.com/yayanzebua/yayan-zebua-portfolio/issues"
+  }
 }

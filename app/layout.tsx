@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 import Header from "@/components/Header";
@@ -8,16 +7,10 @@ import TopLeftImg from "@/components/TopLeftImg";
 
 import "./globals.css";
 
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora-family",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});
-
 export const metadata: Metadata = {
-  title: "Ethan Smith | Portfolio",
+  title: "Yayan Zebua | Portfolio",
   description:
-    "Ethan Smith is a Full-stack web developer with 10+ years of experience.",
+    "Yayan Zebua adalah Mahasiswa Teknik Informatika & Full Stack Programmer di Pusat Gerabah Jakarta, berdedikasi membangun solusi web modern, efisien, dan interaktif.",
   keywords: [
     "react",
     "next",
@@ -25,17 +18,13 @@ export const metadata: Metadata = {
     "html",
     "css",
     "javascript",
-    "js",
+    "typescript",
     "modern-ui",
-    "modern-ux",
     "portfolio",
-    "framer-motion",
-    "react-hot-toast",
-    "resend",
-    "3d-website",
-    "particle-effect",
+    "full-stack developer",
+    "yayan zebua",
   ],
-  authors: [{ name: "Sanidhya Kumar Verma" }],
+  authors: [{ name: "Yayan Zebua" }],
   other: {
     "theme-color": "#f13024",
   },
@@ -47,14 +36,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="id" className="h-full">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`${sora.variable} font-sora page bg-site text-white bg-cover bg-no-repeat relative`}
+        className="font-sora page bg-site text-white bg-cover bg-no-repeat relative"
       >
         <TopLeftImg />
-        <Nav />
         <Header />
-        {children}
+        <main className="w-full h-full relative z-0">
+          {children}
+        </main>
+        <Nav />
         <aside>
           <Toaster
             position="top-center"

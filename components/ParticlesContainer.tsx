@@ -1,8 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Particles, { ParticlesProvider } from "@tsparticles/react";
 import type { Engine, ISourceOptions } from "@tsparticles/engine";
-import { loadFull } from "tsparticles";
+import { loadSlim } from "@tsparticles/slim";
 
 const particlesOptions: ISourceOptions = {
   fullScreen: { enable: false },
@@ -11,26 +12,22 @@ const particlesOptions: ISourceOptions = {
       value: "",
     },
   },
-  fpsLimit: 120,
+  fpsLimit: 30,
   interactivity: {
     events: {
       onClick: {
         enable: false,
-        mode: "push",
       },
       onHover: {
         enable: true,
         mode: "repulse",
       },
-      resize: true,
+      resize: { enable: true },
     },
     modes: {
-      push: {
-        quantity: 90,
-      },
       repulse: {
-        distance: 200,
-        duration: 0.4,
+        distance: 130,
+        duration: 0.35,
       },
     },
   },
@@ -40,13 +37,13 @@ const particlesOptions: ISourceOptions = {
     },
     links: {
       color: "#f5d393",
-      distance: 150,
+      distance: 120,
       enable: true,
-      opacity: 0.5,
+      opacity: 0.32,
       width: 1,
     },
     collisions: {
-      enable: true,
+      enable: false,
     },
     move: {
       direction: "none",
@@ -55,7 +52,7 @@ const particlesOptions: ISourceOptions = {
         default: "bounce",
       },
       random: false,
-      speed: 1,
+      speed: 0.7,
       straight: false,
     },
     number: {
@@ -63,10 +60,10 @@ const particlesOptions: ISourceOptions = {
         enable: true,
         width: 800,
       },
-      value: 80,
+      value: 24,
     },
     opacity: {
-      value: 0.5,
+      value: 0.4,
     },
     shape: {
       type: "circle",
@@ -74,26 +71,56 @@ const particlesOptions: ISourceOptions = {
     size: {
       value: {
         min: 1,
-        max: 5,
+        max: 2.8,
       },
     },
   },
-  detectRetina: true,
+  detectRetina: false,
 };
 
 const initParticles = async (engine: Engine) => {
-  await loadFull(engine);
+  await loadSlim(engine);
 };
 
 const ParticlesContainer = () => {
+  const [canRender, setCanRender] = useState(false);
+
+  useEffect(() => {
+    // Mount after main thread has fully painted and settled (idle)
+    if (typeof window !== "undefined" && window.innerWidth >= 1200) {
+      const scheduleRender = () => {
+        setCanRender(true);
+      };
+
+      if ("requestIdleCallback" in window) {
+        const handle = (window as unknown as { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number }).requestIdleCallback(
+          scheduleRender,
+          { timeout: 800 }
+        );
+        return () => {
+          if ("cancelIdleCallback" in window) {
+            (window as unknown as { cancelIdleCallback: (h: number) => void }).cancelIdleCallback(handle);
+          }
+        };
+      } else {
+        const timer = setTimeout(scheduleRender, 350);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, []);
+
+  if (!canRender) return null;
+
   return (
-    <ParticlesProvider init={initParticles}>
-      <Particles
-        className="w-full h-full absolute translate-z-0 pointer-events-none"
-        id="tsparticles"
-        options={particlesOptions}
-      />
-    </ParticlesProvider>
+    <div className="w-full h-full absolute translate-z-0 pointer-events-none opacity-0 animate-fade-in">
+      <ParticlesProvider init={initParticles}>
+        <Particles
+          className="w-full h-full"
+          id="tsparticles"
+          options={particlesOptions}
+        />
+      </ParticlesProvider>
+    </div>
   );
 };
 

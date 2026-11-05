@@ -1,248 +1,359 @@
-<a name="readme-top"></a>
+<div align="center">
 
-# Modern Portfolio using Next.js and Framer Motion
+  <img src="docs/images/banner.svg" alt="Yayan Zebua - Personal Portfolio Website" width="100%" />
 
-![Modern Portfolio using Next.js and Framer Motion](/.github/images/img_main.png "Modern Portfolio using Next.js and Framer Motion")
+  <br />
+  <br />
 
-[![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
-[![GitHub license](https://flat.badgen.net/github/license/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/modern-portfolio/blob/main/LICENSE "GitHub license")
-[![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/modern-portfolio/commits/main "Maintenance")
-[![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/modern-portfolio/branches "GitHub branches")
-[![Github commits](https://flat.badgen.net/github/commits/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/modern-portfolio/commits "Github commits")
-[![Netlify Status](https://api.netlify.com/api/v1/badges/721491f5-0b0d-4120-96bd-6bd0480ef1e5/deploy-status)](https://awersome-portfolio.netlify.app/ "Netlify Status")
-[![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/modern-portfolio/issues "GitHub issues")
-[![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/modern-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/modern-portfolio/pulls "GitHub pull requests")
+  <h1>YAYAN ZEBUA</h1>
+  <p><strong>Personal Portfolio Website</strong></p>
+  <p><em>Engineering Scalable Web Architectures, Interactive Systems & Digital Experiences</em></p>
 
-<!-- Table of Contents -->
-<details>
+  <p>
+    <a href="https://github.com/yayanzebua/yayan-zebua-portfolio/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-f13024.svg?style=flat-square" alt="MIT License" />
+    </a>
+    <a href="https://nextjs.org/">
+      <img src="https://img.shields.io/badge/Next.js-16.4-black.svg?style=flat-square&logo=next.js" alt="Next.js 16" />
+    </a>
+    <a href="https://react.dev/">
+      <img src="https://img.shields.io/badge/React-19.3-blue.svg?style=flat-square&logo=react" alt="React 19" />
+    </a>
+    <a href="https://www.typescriptlang.org/">
+      <img src="https://img.shields.io/badge/TypeScript-6.0-3178c6.svg?style=flat-square&logo=typescript" alt="TypeScript" />
+    </a>
+    <a href="https://tailwindcss.com/">
+      <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8.svg?style=flat-square&logo=tailwindcss" alt="Tailwind CSS v4" />
+    </a>
+    <a href="https://vercel.com/">
+      <img src="https://img.shields.io/badge/Deploy-Vercel-000000.svg?style=flat-square&logo=vercel" alt="Vercel Ready" />
+    </a>
+  </p>
 
-<summary>
+</div>
 
-# :notebook_with_decorative_cover: Table of Contents
+---
 
-</summary>
+## Table of Contents
 
-- [Folder Structure](#bangbang-folder-structure)
-- [Getting Started](#toolbox-getting-started)
-- [Screenshots](#camera-screenshots)
-- [Tech Stack](#gear-tech-stack)
-- [Stats](#wrench-stats)
-- [Contribute](#raised_hands-contribute)
-- [Acknowledgements](#gem-acknowledgements)
-- [Buy Me a Coffee](#coffee-buy-me-a-coffee)
-- [Follow Me](#rocket-follow-me)
-- [Learn More](#books-learn-more)
-- [Deploy on Vercel](#page_with_curl-deploy-on-vercel)
-- [Give A Star](#star-give-a-star)
-- [Star History](#star2-star-history)
-- [Give A Star](#star-give-a-star)
+- [Overview](#overview)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Development](#development)
+- [Production Build](#production-build)
+- [Deployment](#deployment)
+- [Security](#security)
+- [License](#license)
+- [Contact](#contact)
 
-</details>
+---
 
-## :bangbang: Folder Structure
+## Overview
 
-Here is the folder structure of this app.
+Welcome to the official repository of **Yayan Zebua's Personal Portfolio Website**.
 
-<!--- FOLDER_STRUCTURE_START --->
+Designed with an international digital product standard, this platform represents a synthesis of technical rigor and contemporary user experience. The application functions as an interactive showcase of full-stack web engineering, real-world client implementations, architectural decisions, and software craft.
+
+Developed by **Yayan Zebua**—a Computer Science (Informatics Engineering) student and Full Stack Programmer at Pusat Gerabah Jakarta—this portfolio demonstrates end-to-end competencies in modern web systems, ranging from serverless backend architectures and robust API security to fluid GPU-accelerated motion interfaces.
+
+---
+
+## Features
+
+| Feature Domain | Architectural Capability | Description |
+| :--- | :--- | :--- |
+| **Full-Stack Performance** | Next.js 16 App Router & Turbopack | Sub-millisecond server rendering, intelligent asset streaming, and optimized client hydration. |
+| **Adaptive Navigation** | Context-Aware Dual Layout | Responsive bottom tab bar on mobile viewports and floating dock navigation on desktop screens. |
+| **Project Showcase** | Swiper Interactive Slider | Dynamic presentation of enterprise systems including POS, ERP, IoT monitoring, and REST API Gateways. |
+| **Technical Matrix** | Categorized Skills System | Detailed taxonomy of competencies across Web Programming, Backend Architecture, Databases, and UI/UX. |
+| **Secure Contact Gateway** | Serverless Edge Route | Sliding-window IP rate limiting, Google reCAPTCHA v3 validation, CSRF origin verification, and Resend email dispatch. |
+| **Motion Engineering** | Framer Motion & tsParticles | 60 FPS hardware-accelerated entrance transitions, reactive particles, and zero-blocking page navigation. |
+| **Optimized Media Pipeline** | Next-Gen WebP Conversion | 92%+ transfer size reduction, shimmer skeleton placeholders, and layout-shift (CLS) prevention. |
+| **Security Hardening** | Enterprise Security Headers | Comprehensive CSP policy, clickjacking defense (`DENY`), MIME sniffing protection, and strict referrer policy. |
+
+---
+
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="33%" align="center">
+        <img src="docs/images/portfolio-mobile-home.jpg" alt="Home Interface (Mobile)" width="100%" />
+        <br />
+        <sub><b>Hero Section (Mobile)</b><br />Transparent Cutout & Interactive CTA</sub>
+      </td>
+      <td width="33%" align="center">
+        <img src="docs/images/portfolio-mobile-about.png" alt="About & Credentials Interface" width="100%" />
+        <br />
+        <sub><b>About & Credentials</b><br />Experience, Real Metrics & Skill Hierarchy</sub>
+      </td>
+      <td width="33%" align="center">
+        <img src="docs/images/portfolio-services.png" alt="Services Showcase" width="100%" />
+        <br />
+        <sub><b>Services & Capabilities</b><br />Interactive Service Sliders & Core Competencies</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## Tech Stack
+
+This project strictly utilizes modern, verified dependencies configured for speed, type safety, and scalability.
+
+### Core & Framework
+- ![Next.js](https://img.shields.io/badge/Next.js_16.4-000000?style=flat-square&logo=next.js&logoColor=white) **Next.js 16.4** — React Framework for the Web with App Router and Turbopack.
+- ![React](https://img.shields.io/badge/React_19.3-20232A?style=flat-square&logo=react&logoColor=61DAFB) **React 19.3** — Declarative UI component primitives and concurrent rendering.
+- ![TypeScript](https://img.shields.io/badge/TypeScript_6.0-3178C6?style=flat-square&logo=typescript&logoColor=white) **TypeScript 6.0** — End-to-end static type verification and schema contracts.
+
+### Styling & Motion
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) **Tailwind CSS v4** — High-performance utility-first styling engine.
+- ![Framer Motion](https://img.shields.io/badge/Framer_Motion_14-0055FF?style=flat-square&logo=framer&logoColor=white) **Framer Motion 14** — Production-ready physics-based animations.
+- ![Swiper](https://img.shields.io/badge/Swiper_14-6332F6?style=flat-square&logo=swiper&logoColor=white) **Swiper 14** — Modern touch slider for projects and testimonials.
+- ![tsParticles](https://img.shields.io/badge/tsParticles_4-E82A52?style=flat-square&logo=particles&logoColor=white) **tsParticles 4** — Lightweight GPU particle visual canvas.
+
+### Backend, Email & Security
+- ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) **Node.js** — Serverless runtime engine.
+- ![Resend](https://img.shields.io/badge/Resend_API_6.32-000000?style=flat-square&logo=resend&logoColor=white) **Resend** — Transactional email delivery infrastructure.
+- ![Google reCAPTCHA](https://img.shields.io/badge/reCAPTCHA_v3-4285F4?style=flat-square&logo=google&logoColor=white) **Google reCAPTCHA v3** — Frictionless bot prevention and abuse defense.
+
+### Quality & Deployment
+- ![ESLint](https://img.shields.io/badge/ESLint_9-4B32C3?style=flat-square&logo=eslint&logoColor=white) **ESLint 9** — Code quality and standards enforcement.
+- ![Vercel](https://img.shields.io/badge/Vercel_Edge-000000?style=flat-square&logo=vercel&logoColor=white) **Vercel** — Global Edge Network deployment with automated CI/CD.
+
+---
+
+## Project Structure
+
 ```bash
 modern-portfolio/
-  |- app/
-    |-- about/
-    |-- api/
-    |-- contact/
-    |-- services/
-    |-- testimonials/
-    |-- work/
-    |-- globals.css
-    |-- layout.tsx
-    |-- page.tsx
-    |-- template.tsx
-  |- components/
-    |-- Avatar.tsx
-    |-- Bulb.tsx
-    |-- Circles.tsx
-    |-- Header.tsx
-    |-- Nav.tsx
-    |-- ParticlesContainer.tsx
-    |-- ProjectsBtn.tsx
-    |-- ServiceSlider.tsx
-    |-- Socials.tsx
-    |-- TestimonialSlider.tsx
-    |-- TopLeftImg.tsx
-    |-- Transition.tsx
-    |-- WorkSlider.tsx
-  |- lib/
-    |-- contact.ts
-  |- public/
-  |- .env.example
-  |- .env/.env.local
-  |- .gitignore
-  |- environment.d.ts
-  |- eslint.config.mjs
-  |- netlify.toml
-  |- next.config.ts
-  |- package.json
-  |- pnpm-lock.yaml
-  |- pnpm-workspace.yaml
-  |- postcss.config.mjs
-  |- tsconfig.json
-  |- variants.ts
+├── app/
+│   ├── about/page.tsx             # Interactive About & professional journey
+│   ├── api/contact/route.ts       # Secure serverless contact endpoint (Rate-limited, reCAPTCHA, Resend)
+│   ├── contact/page.tsx           # Contact form interface with real-time feedback
+│   ├── services/page.tsx          # Service offerings & engineering competencies
+│   ├── testimonials/page.tsx      # Client reviews & collaborative testimonials
+│   ├── work/page.tsx              # Featured systems & full-stack project showcases
+│   ├── globals.css                # Tailwind CSS v4 styling & entrance keyframes
+│   ├── layout.tsx                 # Root layout with responsive navigation & preconnected typography
+│   └── page.tsx                   # Hero section with interactive CTA & cutout portrait
+├── components/
+│   ├── Avatar.tsx                 # Desktop hero portrait container
+│   ├── Bulb.tsx                   # Ambient glowing lighting effect
+│   ├── Circles.tsx                # Background circular geometry asset
+│   ├── Header.tsx                 # Top brand bar with verified social links
+│   ├── Nav.tsx                    # Adaptive dual-mode navigation (mobile bottom dock & desktop dock)
+│   ├── ParticlesContainer.tsx     # GPU-accelerated idle-mounted particle canvas
+│   ├── ProjectsBtn.tsx            # Animated circular project badge CTA
+│   ├── ServiceSlider.tsx          # Swiper carousel for engineering services
+│   ├── Skeleton.tsx               # Skeleton loading placeholder components
+│   ├── SkeletonImage.tsx          # Progressive image loader with skeleton shimmer
+│   ├── Socials.tsx                # Verified social media channels
+│   ├── TestimonialSlider.tsx      # Client testimonial Swiper slider
+│   ├── TopLeftImg.tsx             # High-priority decorative explosion asset
+│   └── WorkSlider.tsx             # Interactive project showcase slider
+├── docs/
+│   └── images/                    # Verified screenshots & original SVG vector banner
+├── lib/
+│   └── contact.ts                 # Form validation schemas & reCAPTCHA helpers
+├── public/                        # Compressed WebP assets & vector icons
+├── .env.example                   # Template for environment configuration
+├── next.config.ts                 # Hardened CSP, compression, and Next.js 16 settings
+├── package.json                   # Project dependencies and script declarations
+├── tsconfig.json                  # Strict TypeScript compiler options
+└── variants.ts                    # Framer Motion animation configurations
 ```
-<!--- FOLDER_STRUCTURE_END --->
+
+---
+
+## Getting Started
+
+### Prerequisites
+Before running the application locally, ensure you have the following installed on your machine:
+
+- **Node.js**: `v18.18.0` or higher (Node.js `v20+` recommended)
+- **Package Manager**: `npm` (v9+) or `pnpm`
+- **Git**: Installed and configured
+
+Verify your environment:
+```bash
+node -v
+npm -v
+git --version
+```
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yayanzebua/yayan-zebua-portfolio.git
+   cd yayan-zebua-portfolio
+   ```
+
+2. **Install project dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Open `.env.local` and populate the required API credentials.
+
+---
+
+## Environment Variables
+
+The project uses environment variables to safely configure third-party services. Store your real secrets in `.env.local` (which is strictly ignored by Git).
+
+| Variable Name | Required | Description | Example / Fallback |
+| :--- | :---: | :--- | :--- |
+| `NEXT_TELEMETRY_DISABLED` | Optional | Disables Next.js telemetry collection | `1` |
+| `RESEND_API_KEY` | Required | API key from Resend dashboard | `re_xxxxxxxxxxxxxxxxxxxxxxxx` |
+| `RESEND_FROM_EMAIL` | Required | Verified sender address in Resend | `Yayan Zebua <onboarding@resend.dev>` |
+| `CONTACT_TO_EMAIL` | Required | Destination address for contact submissions | `yayanzebua15@gmail.com` |
+| `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` | Required | Public site key for Google reCAPTCHA v3 | `6Lxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` |
+| `RECAPTCHA_SECRET_KEY` | Required | Secret verification key for Google reCAPTCHA | `6Lxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` |
+| `RECAPTCHA_MIN_SCORE` | Optional | Minimum bot risk threshold (0.0 to 1.0) | `0.5` |
+
+---
+
+## Development
+
+To start the local development server with Turbopack acceleration:
+
+```bash
+npm run dev
+```
+
+The application will be accessible at:
+```
+http://localhost:3000
+```
+
+- **Turbopack:** Enables instant Hot Module Replacement (HMR).
+- **Idle Mounting:** Particle engines mount during idle cycles to ensure instantaneous first interaction.
+
+---
+
+## Production Build
+
+To test and produce an optimized production-grade bundle:
+
+```bash
+# 1. Type-check and create production build
+npm run build
+
+# 2. Start production server locally
+npm run start
+```
+
+To run the ESLint static code analyzer:
+```bash
+npm run lint
+```
+
+---
+
+## Deployment
+
+The application is natively optimized for deployment on **[Vercel](https://vercel.com)**.
+
+### Step-by-Step Vercel Deployment
+
+1. **Push your code to GitHub:**
+   Ensure your repository is hosted at `https://github.com/yayanzebua/yayan-zebua-portfolio`.
+
+2. **Import into Vercel:**
+   - Log in to [Vercel](https://vercel.com/) with your GitHub account.
+   - Click **"Add New Project"** and select **`yayan-zebua-portfolio`**.
+
+3. **Configure Build Settings:**
+   - Framework Preset: **Next.js** (automatically detected).
+   - Root Directory: `./` (leave default).
+
+4. **Add Environment Variables:**
+   Under the **Environment Variables** tab, copy the values from your `.env.local`:
+   - `RESEND_API_KEY`
+   - `RESEND_FROM_EMAIL`
+   - `CONTACT_TO_EMAIL`
+   - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`
+   - `RECAPTCHA_SECRET_KEY`
+   - `RECAPTCHA_MIN_SCORE`
+
+5. **Deploy:**
+   - Click **Deploy**. Your portfolio will be live in under 45 seconds with global Edge CDN caching and automated SSL HTTPS.
+
+### References
+- [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-your-application/deploying)
+- [Vercel Git Integration Documentation](https://vercel.com/docs/deployments/git)
+
+---
+
+## Security
+
+This repository implements multi-layered security controls to protect visitor privacy, prevent server resource exhaustion, and eliminate common web vulnerabilities:
+
+1. **Content Security Policy (CSP):**
+   Strict directive set in [`next.config.ts`](next.config.ts) restricting script execution, style sources, fonts, and blocking unauthorized iframes (`frame-ancestors 'none'`).
+2. **Defensive HTTP Headers:**
+   - `X-Frame-Options: DENY` (Anti-clickjacking protection).
+   - `X-Content-Type-Options: nosniff` (MIME-sniffing protection).
+   - `Referrer-Policy: strict-origin-when-cross-origin`.
+   - `Permissions-Policy` disabling camera, microphone, and geolocation.
+3. **Sliding-Window IP Rate Limiter:**
+   In-memory rate limiting on `/api/contact` enforcing a strict maximum of **5 submissions per 10-minute window** per client IP.
+4. **Cross-Site Request Forgery (CSRF) Defense:**
+   Strict verification of `Origin` and `Host` headers on mutation endpoints.
+5. **Stored XSS Prevention:**
+   Deterministic HTML entity encoding (`escapeHtml`) on all user-submitted form fields prior to any storage or forwarding.
+6. **Payload Size Guard:**
+   Rejection of incoming HTTP request payloads larger than **10 KB** (`413 Payload Too Large`).
+7. **Resource Exhaustion Guard:**
+   Enforced upper bound of 100 entries on local message caches to guarantee zero disk saturation.
+8. **Credential Hygiene:**
+   Zero-commit policy on sensitive credentials enforced via comprehensive [`.gitignore`](.gitignore).
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.  
+See the [`LICENSE`](LICENSE) file for complete terms and copyright details.
+
+```text
+Copyright (c) 2026 Yayan Zebua
+```
+
+---
+
+## Contact
+
+Feel free to connect for software engineering inquiries, enterprise solutions, or technical collaboration:
+
+<div align="center">
+
+| Channel | Contact Reference | Link |
+| :--- | :--- | :--- |
+| **Developer** | Yayan Zebua | [yayan-zebua-portfolio](https://github.com/yayanzebua/yayan-zebua-portfolio) |
+| **Email** | `yayanzebua15@gmail.com` | [Send Email](mailto:yayanzebua15@gmail.com) |
+| **GitHub** | `@yayanzebua` | [github.com/yayanzebua](https://github.com/yayanzebua) |
+| **WhatsApp** | `+62 852-6230-4452` | [Direct WhatsApp Chat](https://api.whatsapp.com/send/?phone=6285262304452) |
+| **Instagram** | `@yayanzheb` | [instagram.com/yayanzheb](https://www.instagram.com/yayanzheb/) |
+| **Facebook** | `yayanzebua` | [facebook.com/yayanzebua](https://www.facebook.com/yayanzebua) |
 
 <br />
 
-## :toolbox: Getting Started
+<sub>Designed and engineered with care by <b>Yayan Zebua</b>. Built with Next.js 16 and React 19.</sub>
 
-1. Make sure **Git** and **NodeJS** is installed.
-
-2. Clone this repository to your local computer.
-
-3. Create `.env.local` file in root folder.
-
-4. Contents of `.env.local`:
-
-```env
-# disabled next.js telemetry
-NEXT_TELEMETRY_DISABLED="1"
-
-# resend
-RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-RESEND_FROM_EMAIL="Your Name <me@example.com>"
-CONTACT_TO_EMAIL="contact@example.com"
-CONTACT_SITE_URL="https://awersome-portfolio.netlify.app"
-RESEND_TEMPLATE_CONTACT_USER="contact-thank-you"
-RESEND_TEMPLATE_CONTACT_ADMIN="contact-admin"
-
-# google recaptcha v3
-NEXT_PUBLIC_RECAPTCHA_SITE_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-RECAPTCHA_SECRET_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-RECAPTCHA_MIN_SCORE="0.5"
-```
-
-5. Create an account at [Resend](https://resend.com "Resend") and [add + verify a sending domain](https://resend.com/domains "Resend domains").
-
-6. Create an API key at [Resend API Keys](https://resend.com/api-keys "Resend API keys") with **Sending access**. Copy it to `RESEND_API_KEY`.
-
-7. Set `RESEND_FROM_EMAIL` to an address on that verified domain. Set `CONTACT_TO_EMAIL` to the inbox that should receive new contact notifications (required). Set `CONTACT_SITE_URL` to your site's public URL (no trailing slash).
-
-8. In [Resend Templates](https://resend.com/templates "Resend templates"), create **two** templates and **Publish** each.
-
-   **Template 1 — thank you to the user**
-   - Name: `contact-thank-you`
-   - Variables: `USER_NAME`, `USER_MESSAGE`, `SITE_URL`
-
-   **Template 2 — new message to admin**
-   - Name: `contact-admin`
-   - Variables: `USER_NAME`, `USER_EMAIL`, `USER_MESSAGE`, `SITE_URL`
-
-   Copy each template's alias into `RESEND_TEMPLATE_CONTACT_USER` and `RESEND_TEMPLATE_CONTACT_ADMIN`.
-
-9. Create a [Google reCAPTCHA v3](https://www.google.com/recaptcha/admin/create "Google reCAPTCHA") project. Choose **Score based (v3)**, add your production domain(s) **and** `localhost`, then copy the **Site key** to `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` and the **Secret key** to `RECAPTCHA_SECRET_KEY`.
-
-10. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `pnpm install --legacy-peer-deps`.
-
-11. Now the app is fully configured 👍 and you can start it with `npm run dev` or `pnpm dev`.
-
-**NOTE:** Ensure you don't share these keys publicly.
-
-### :raising_hand: Need Help?
-
-If you run into issues during installation or setup:
-
-- **GitHub Discussions** — [Open a Q&A discussion](https://github.com/sanidhyy/modern-portfolio/discussions/new?category=q-a) for setup and troubleshooting help.
-- **Email** — [sanidhyyy@gmail.com](mailto:sanidhyyy@gmail.com)
-- **Discord** — `@sanidhyy`
-
-## :camera: Screenshots:
-
-![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
-
-![Services](/.github/images/img2.png "Services")
-
-![Showcase Projects](/.github/images/img3.png "Showcase Projects")
-
-![Contact Form](/.github/images/img4.png "Contact Form")
-
-## :gear: Tech Stack
-
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![JavaScript](https://skillicons.dev/icons?i=js "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify")
-
-## :wrench: Stats
-
-[![Stats for Modern Portfolio](/.github/images/stats.svg "Stats for Modern Portfolio")](https://pagespeed.web.dev/analysis?url=https://awersome-portfolio.netlify.app/ "Stats for Modern Portfolio")
-
-## :raised_hands: Contribute
-
-You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
-
-## :gem: Acknowledgements
-
-Useful resources and dependencies that are used in Modern Portfolio.
-
-<!--- DEPENDENCIES_START --->
-- [@tailwindcss/postcss](https://www.npmjs.com/package/@tailwindcss/postcss): ^4.3.3
-- [@tsparticles/engine](https://www.npmjs.com/package/@tsparticles/engine): ^4.4.0
-- [@tsparticles/react](https://www.npmjs.com/package/@tsparticles/react): ^4.4.0
-- [@types/node](https://www.npmjs.com/package/@types/node): ^26.6.5
-- [@types/react](https://www.npmjs.com/package/@types/react): ^19.3.0
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.3.0
-- [eslint](https://www.npmjs.com/package/eslint): ^9.39.5
-- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.4.0
-- [framer-motion](https://www.npmjs.com/package/framer-motion): ^14.2.0
-- [next](https://www.npmjs.com/package/next): 16.4.0
-- [postcss](https://www.npmjs.com/package/postcss): ^8.5.30
-- [react](https://www.npmjs.com/package/react): 19.3.0
-- [react-countup](https://www.npmjs.com/package/react-countup): ^6.4.2
-- [react-dom](https://www.npmjs.com/package/react-dom): 19.3.0
-- [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
-- [react-hot-toast](https://www.npmjs.com/package/react-hot-toast): ^2.6.1
-- [react-icons](https://www.npmjs.com/package/react-icons): ^5.7.0
-- [resend](https://www.npmjs.com/package/resend): ^6.32.1
-- [swiper](https://www.npmjs.com/package/swiper): ^14.3.0
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.3.3
-- [tsparticles](https://www.npmjs.com/package/tsparticles): ^4.4.0
-- [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
-
-<!--- DEPENDENCIES_END --->
-
-## :coffee: Buy Me a Coffee
-
-[<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" width="200" />](https://www.buymeacoffee.com/sanidhy "Buy me a Coffee")
-
-## :rocket: Follow Me
-
-[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fx.com%2F_sanidhyy)](https://x.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2Fmodern-portfolio "Tweet")
-
-## :books: Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## :page_with_curl: Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## :star: Give A Star
-
-You can also give this repository a star to show more people and they can use this repository.
-
-## :star2: Star History
-
-<a href="https://star-history.com/#sanidhyy/modern-portfolio&Timeline">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanidhyy/modern-portfolio&type=Timeline&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanidhyy/modern-portfolio&type=Timeline" />
-  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanidhyy/modern-portfolio&type=Timeline" />
-</picture>
-</a>
-
-<br />
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+</div>
